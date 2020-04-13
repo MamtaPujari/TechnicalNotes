@@ -1,0 +1,82 @@
+
+
+https://app.circleci.com/projects/project-dashboard/github/MamtaPujari
+
+GIT
+
+Adding a new Project
+------------------
+git bash here : just above the parent window
+	ls
+	git init
+	
+	// add everything inside this folder
+	git add .
+	
+	git commit -m "first commit"
+		
+	// fatal: unable to auto-detect email address #246 <<< to solve this problem, run below 2 commands, and then run above 1 command
+	git config --global user.email "pujari.mamta@gmail.com"
+	git config --global user.name "Your Name"
+	
+	
+	git remote add origin https://github.com/MamtaPujari/AgilePPMTool.git
+	git push -u origin master
+	>>>> will ask for login password
+		> pujari.mamta@gmail
+		>..351730
+
+---------------------------
+
+Branching:
+
+// list all the current branches
+git branch 
+
+//create branch with name <branch0>
+ git branch branch0
+ git checkout branch0
+-----------------------
+work little bit in the project using IntelliJ
+	- add package
+	- add a class
+	
+	git add .
+	git commit -m "Project Object 2nd Commit"
+	
+ // push the branch upstream : st now we can see our branch in the git
+	git push --set-upstream origin branch0
+-------------------------
+
+// got to master branch so that in next command we can merge branch0 to it
+	git checkout master
+	git merge branch0 
+	
+// commit change 
+	git push
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
